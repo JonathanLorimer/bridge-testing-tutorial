@@ -12,9 +12,9 @@ npm run test
 
 #### Some Helpful Friends
 
-💻 - Cody the Computer: Cody will tell you where you should insert your own code in the exercises
-ℹ️ - Informative Ines: Ines will tell you what you are supposed to do in a particular section
-💡 - Landry the Lighbuld: Landry is here to give you helpful hints about how to accomplish a task
+💻 - **Cody the Computer:** Cody will tell you where you should insert your own code in the exercises  
+ℹ️ - **Informative Ines:** Ines will tell you what you are supposed to do in a particular section  
+💡 - **Landry the Lighbuld:** Landry is here to give you helpful hints about how to accomplish a task
 
 #### Exercises
 
