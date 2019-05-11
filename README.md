@@ -1,68 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Bridge Testing React Tutorial
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+```
+git clone git@github.com:JonathanLorimer/bridge-testing-tutorial.git && cd bridge-testing-tutorial
+npm install
+npm run test
+```
 
-### `npm start`
+## The Minimum You Need To Know
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Some Helpful Friends
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+💻 - Cody the Computer: Cody will tell you where you should insert your own code in the exercises
+ℹ️ - Informative Ines: Ines will tell you what you are supposed to do in a particular section
+💡 - Landry the Lighbuld: Landry is here to give you helpful hints about how to accomplish a task
 
-### `npm test`
+#### Exercises
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The exercises are organized from 1 - 5 and build on eachother, the goal of each exercise is explained inside the code, and usually has something to do with the title.
 
-### `npm run build`
+You shouldn't have to change any of the react code, just the tests.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## A Little More Information
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The tests have all been given failing assertions by default, so it is your job to make them pass!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm run test` will put you in interactive mode by default, so whenever you make a change to a file the test suite will re-run
 
-### `npm run eject`
+if you only want to execute the test for a certain file, within jests interactive mode, hit `p` and type in the name of the file you want to test.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Exercises in Depth
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. This exercise covers the common pattern of snapshot testing a react component. Just as a note, snapshots are created the first time you run the test suite after expecting to match a snapshot. All the snapshots will exist in the `snapshots` folder that will be created in the directory the test exists in.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. This exercise is supposed to demonstrate the use of snapshots to assert over the shape of a javascript datastructure (Array or Object) without having to mock out the expected result manually. It is very easy to get into the slippery slope of snapshoting everything so I recommend just using snapshots for two purposes:
+   - A cheap low assurance test that covers the general shape of a component
+   - Automatically mocking out the shape of nested data-structures instead of doing it manually
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> NOTE: As your test suite grows snapshots become very fragile and will fail frequently, this will lead to coders updating them without checking what the changes are, this defeats the whole purpose of snapshot tests.
 
-## Learn More
+3. This exercise demonstrates a great use case for enzyme; shallow rendering to get a handle on component methods.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. This exercise is meant to demonstrate how functional (i.e. stateless components) are a lot easier to test than Class components.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+5. Now its your turn! write unit tests for this react component
