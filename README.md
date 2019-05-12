@@ -11,7 +11,7 @@ a
 
 > click a after `npm run test` to have jest run the entire test suite in interactive mode
 
-## The Minimum You Need To Know
+## The Minimum You Need To Know to Get Started
 
 #### Some Helpful Friends
 
