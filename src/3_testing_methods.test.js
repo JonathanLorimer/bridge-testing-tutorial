@@ -1,5 +1,10 @@
+import React from "react";
 import { shallow } from "enzyme";
-import MyBasicComponent from "./1_testing_components";
+import MyBasicComponent from "./3_testing_methods";
+import { configure } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
+
+configure({ adapter: new Adapter() });
 
 describe("MyBasicComponent", () => {
   describe("increment", () => {
@@ -23,7 +28,6 @@ describe("MyBasicComponent", () => {
 
       // ℹ️ Step 4: Change the assertion below to expect that state.counter has been incremented
       // 💡 Hint: https://airbnb.io/enzyme/docs/api/ShallowWrapper/state.html
-
       expect(false).toBe(true);
     });
   });
@@ -50,7 +54,6 @@ describe("MyBasicComponent", () => {
 
       // ℹ️ Step 4: Change the assertion below to expect that state.counter has been incremented
       // 💡 Hint: https://airbnb.io/enzyme/docs/api/ShallowWrapper/state.html
-
       expect(false).toBe(true);
     });
   });
@@ -88,7 +91,6 @@ describe("MyBasicComponent", () => {
       2: that global.alert was called with the correct argument (`THIS IS YOUR COUNT: ${shallowRenderedComponent.state("count")}!!!!`)
       💡 Hint: https://jestjs.io/docs/en/expect#tohavebeencalledwitharg1-arg2-
       */
-
       expect(false).toBe(true);
       expect(false).toBe(true);
     });

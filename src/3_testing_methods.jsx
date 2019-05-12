@@ -19,14 +19,14 @@ class MyBasicComponent extends Component {
   render() {
     return (
       <main>
-        <section class="happy-section">
+        <section className="happy-section">
           <h1>Hello World</h1>
           <div>
-            <button class="button decrement" onClick={this.decrement}>
+            <button className="button decrement" onClick={this.decrement}>
               -
             </button>
             <p>{this.state.counter}</p>
-            <button class="button increment" onClick={this.increment}>
+            <button className="button increment" onClick={this.increment}>
               +
             </button>
           </div>

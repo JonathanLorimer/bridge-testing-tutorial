@@ -1,3 +1,4 @@
+import React from "react";
 import { create } from "react-test-renderer";
 import MyBasicComponent from "./1_testing_components";
 
@@ -17,7 +18,6 @@ describe("MyBasicComponent", () => {
 
     // ℹ️ Step 3: Change the assertion below so that the JSON matches what your component previously looked like
     // 💡 Hint: https://jestjs.io/docs/en/snapshot-testing
-
     expect(false).toBe(true);
   });
 });
