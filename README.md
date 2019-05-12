@@ -21,7 +21,7 @@ a
 
 #### Exercises
 
-The exercises are organized from 1 - 5 and build on eachother, the goal of each exercise is explained inside the code, and usually has something to do with the title.
+The exercises are organized from 1 - 3 and build on eachother, the goal of each exercise is explained inside the code, and usually has something to do with the title.
 
 You shouldn't have to change any of the react code, just the tests.
 
