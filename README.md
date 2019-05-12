@@ -46,7 +46,3 @@ Additionally, you might notice that I have used `describe` and `it` blocks in a 
 > NOTE: As your test suite grows snapshots become very fragile and will fail frequently, this will lead to fellow developers updating them without checking what the changes are, this defeats the whole purpose of snapshot tests.
 
 3. This exercise demonstrates a great use case for enzyme; shallow rendering to get a handle on component methods.
-
-4. This exercise is meant to demonstrate how functional (i.e. stateless components) are a lot easier to test than Class components.
-
-5. Now its your turn! write unit tests for this react component
